@@ -26,10 +26,11 @@ $ docker run --rm \
     -v /path/to/output:/mnt/output:rw \
     bdc/fmask:5.0.1 \
     --imagepath /mnt/input/path/to/S2A_MSIL1C_20250104T125311_N0511_R052_T24MYT_20250104T143016.SAFE \
+    --output /mnt/output \
     --model UPL \
     --dcloud 0
 ```
-Results are written on mounted `/mnt/output`.
+Results are written on the input .SAFE if --output is not informed.
 
 ## Acknowledgements
 
